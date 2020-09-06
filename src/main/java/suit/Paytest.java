@@ -19,4 +19,8 @@ public class Paytest {
     public void pay1(){
         System.out.println("支付成功");
     }
+    @Test
+    public void pay2(){
+        System.out.println("支付成功");
+    }
 }
