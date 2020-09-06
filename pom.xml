@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.YY</groupId>
+    <artifactId>YYtest</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <!--<modules>
+        <module>Chapter</module>
+    </modules>-->
+
+
+    <dependencies>
+        <!--     testNG依赖  -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+            <scope>compile</scope>
+        </dependency>
+<!--     allure 集成testNG依赖 -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.13.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-java-commons</artifactId>
+            <version>2.13.5</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+    </dependencies>
+    <!--       Allure testNG插件官网  参考allure官网的testNG配置-->
+    <build>
+        <plugins>
+            <plugin>
+                <!-- maven-surefire-plugin 配合testng/junit执行测试用例的maven插件 -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
+                <configuration>
+                    <!-- 设置系统变量，在后面定制化测试报表的时候用得上 -->
+                    <systemPropertyVariables>
+                        <org.umcommons.reportng.escape-output>false</org.umcommons.reportng.escape-output>
+                    </systemPropertyVariables>
+                    <!-- 测试失败后，是否忽略并继续测试 -->
+                    <testFailureIgnore>true</testFailureIgnore>
+
+                    <systemProperties>
+                        <property>
+                            <!-- 配置 allure 结果存储路径 -->
+                            <name>allure.results.directory</name>
+                            <value>allure-results</value>
+                        </property>
+                    </systemProperties>
+
+
+                  <argLine>
+                        -DFile.encoding=UTF-8
+                        <!-- 配置拦截器/有这个@step注解才有作用 -->
+                     -javaagent:"C:\Users\yuzhenni\.m2\repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar"
+                    </argLine>
+
+                    <!-- 指定构建（执行套件）时要执行的套件的文件路径 -->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+
+                  <!-- 是否跳过测试 -->
+                    <!--    <skipTests>false</skipTests>-->
+
+
+
+                </configuration>
+
+
+
+                <dependencies>
+                    <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>1.9.6</version>
+                        <scope>runtime</scope>
+                    </dependency>
+
+
+                </dependencies>
+            </plugin>
+           
+        </plugins>
+    </build>
+    <!--解决编码乱码问题-->
+    <properties>
+
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <!-- 文件拷贝时的编码 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- 编译时的编码 -->
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <aspectj.version>1.8.10</aspectj.version>
+
+    </properties>
+</project>

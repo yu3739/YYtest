@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="shishi">
+<test name="shish1">
+    <classes>
+         <class name="suit.suitConfig"/>
+        <class name="suit.LoginTest"/>
+    </classes>
+</test>
+
+
+    <test name="shishi2">
+        <classes>
+            <class name="suit.suitConfig"/>
+            <class name="suit.Paytest"/>
+        </classes>
+    </test>
+</suite>
