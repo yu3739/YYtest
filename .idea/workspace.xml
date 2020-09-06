@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50646305-13b8-4878-8bd3-4150273d122a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suit/Paytest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suit/Paytest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/suit/Paytest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/suit/Paytest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +158,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599294688876</updated>
-      <workItem from="1599294691446" duration="26941000" />
+      <workItem from="1599294691446" duration="28473000" />
     </task>
     <task id="LOCAL-00001" summary="点多">
       <created>1599371715378</created>
@@ -180,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599382784555</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="sdfd">
+      <created>1599389366567</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599389366568</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +208,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="点多" />
     <MESSAGE value="dsf" />
-    <option name="LAST_COMMIT_MESSAGE" value="dsf" />
+    <MESSAGE value="sdfd" />
+    <option name="LAST_COMMIT_MESSAGE" value="sdfd" />
   </component>
 </project>
