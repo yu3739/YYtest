@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class LoginTest {
     @Test(description = "这是标题吗")
-    @Feature("主要功能模块")
+    @Feature("主要能模块")
     @Story("功能模块表的分支功能")
     @Step("步骤1到2到3到4")
 
