@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="50646305-13b8-4878-8bd3-4150273d122a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/suit/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/suit/LoginTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +45,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -157,7 +156,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599294688876</updated>
-      <workItem from="1599294691446" duration="23695000" />
+      <workItem from="1599294691446" duration="25620000" />
     </task>
     <task id="LOCAL-00001" summary="点多">
       <created>1599371715378</created>
@@ -166,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599371715379</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dsf">
+      <created>1599378538058</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599378538058</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +191,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="点多" />
-    <option name="LAST_COMMIT_MESSAGE" value="点多" />
+    <MESSAGE value="dsf" />
+    <option name="LAST_COMMIT_MESSAGE" value="dsf" />
   </component>
 </project>

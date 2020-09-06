@@ -13,4 +13,10 @@ public class Paytest {
     public void pay(){
         System.out.println("支付成功");
     }
+
+
+    @Test
+    public void pay1(){
+        System.out.println("支付成功");
+    }
 }
